@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Formulaire {% endblock %}
+
+{% block body %}
+
+<h1 class="text-center">Formulaire</h1>
+</br></br>
+
+{{ form_start(form) }}
+
+ <div class="text-center">
+    <div class="form-group">
+        {{ form_row(form.nom) }}
+    </div>
+    <div class="form-group">
+        {{ form_row(form.prenom) }}
+    </div>
+    <div class="form-group">
+        {{ form_row(form.email) }}
+    </div>
+    <div class="form-group">
+        {{ form_row(form.numtel) }}
+    </div>
+    <div class="form-group">
+        {{ form_row(form.ville) }}
+    </div>
+    <div class="form-group">
+        {{ form_row(form.homme) }}
+    </div>
+    <div class="form-group">
+        {{ form_row(form.femme) }}
+    </div>
+    <div class="form-group">
+        {{ form_row(form.age) }}
+    </div>
+
+    <div class="form-group">
+        <button class="btn btn-primary" type="submit">Valider</button>
+    </div>
+ </div>
+
+{{ form_end(form) }}
+
+{% endblock %}
